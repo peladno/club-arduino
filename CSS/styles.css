@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  /*navegador*/
+
+header {
+  background-color: #D7ECFD;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  width: auto;
+}
+
+.header-logoimg {
+  width: 130px;
+  margin-left: 30px;
+} 
+
+nav ul li {
+    display: list-item;
+    font-size: 1.6rem;
+}
+
+.ul-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F28E23;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.18rem 0.62rem;
+  text-decoration: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 2px
+}
+
+/*redes flotantes*/
+.redes-flotantes {
+  display: none;
+}
+
+/*index*/
+.principal1 img {
+  width: 100%;
+}
+
+.principal1 {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.arduino-index0 article h1 {
+  font-size: 2.5rem;
+  color: #F28E23; 
+  text-align: center;
+  padding: 0.93rem;
+  text-align: center;
+}
+
+.arduino-index0 article p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.arduino-index0 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.25rem;
+  margin: 2.5rem;
+}
+
+.placa-div img {
+  width: 100%;
+}
+
+
+/*footer*/   
+footer section{
+  background-color: rgb(255, 132, 31);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.footer section article {
+  padding-left: 0px;
+}
+
+footer section article p {
+  text-align: center;
+}
+
+footer {
+  justify-items: center;  
+}
+
+.footer-logo {
+  width: 100px;
+  margin-top: 15px;
+}
+
+.footer-redes img {
+  width: 40px;
+}
+
+footer div p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+footer div p a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+
+/*titulo con imagen*/
+
+.titulo {
+  color: white;
+  padding: 6.25rem;
+  background-image: url(/imagenes/talleres/imgTitulo2.jpg);
+  background-size: cover; 
+  margin-bottom: 0.93rem;
+
+}
+
+.titulo h1 {
+  font-size: 3.1rem;
+}
+
+/*quienes somos*/
+
+.quienessomos-section1 {
+display: grid;
+grid-template-rows: repeat(auto-fit);
+gap: 2rem;
+margin: 3rem;
+}
+
+.quienessomos-main section article h2 {
+  font-size: 2.5rem;
+  color: #F28E23;
+  text-align: center;
+}
+
+.quienessomos-main section article h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.quienessomos-main section article img {
+  width: 100%;
+}
+
+.quienessomos-main section article {
+  width: 100%;
+}
+
+.quienessomos-main section article p {
+  height: 70px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*talleres*/
+.talleres-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.talleres-main section {
+  animation: entrada 700ms ease-out;
+  animation-fill-mode: backwards;
+  --stagger-delay: 100ms;
+}
+
+.talleres-main section:nth-child(1) {
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.talleres-main section:nth-child(2) {
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.talleres-main section:nth-child(3) {
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+
+.talleres-main section:nth-child(4) {
+  animation-delay: calc(4 * var(--stagger-delay));
+}
+
+.talleres-main section article img {
+  width: 100%;
+}
+
+.talleres-main section article h2 {
+  font-size: 2em;
+  color: #F28E23;
+  text-align: center;
+}
+
+.talleres-main section article p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding:0 0 1.5rem ;
+}
+
+.talleres-main {
+  margin: 3.125rem;
+}
+
+.talleres-main section article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.talleres-boton {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: rgba(18, 90, 246, 0.657);
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+}
+
+/*Arduino básico*/
+
+.arduinobasico-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 1.5rem;
+}
+
+.arduinobasico-videos article iframe{
+  width: 100%;
+}
+
+.arduino-basico-continuacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arduinobasico-main section p {
+  font-size: 2em;
+}
+  
+.arduinobasico-main section p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.arduinobasico-main section {
+  padding: 0.625rem;
+}
+
+
+.arduinobasico-main section div a img {
+  width: 150px;
+}
+
+/*Descargas*/
+.descargas-main section h2 {
+  font-size: 2em;
+  color: #F28E23;
+  text-align: center;
+}
+
+.descargas-main section p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.descargas-main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+  
+.descargas-main section article ul li {
+  padding: 1rem;
+  font-size: 1.3rem;
+  list-style-image: url(/imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
+}
+
+.descargas-main section article ul {
+  margin-left: 6.25rem;
+  margin-bottom: 0.93rem;
+}
+  
+/*contacto*/
+
+.contacto-main {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .5fr .5fr;
+  grid-row-gap: 15px;
+  grid-column-gap: none;
+}
+.secciones-contacto {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.comentario-contacto {
+  width: 300px;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: center;
+  font-size: 1.1rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+  
+.datos-contacto {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+  
+.mapa-contacto {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.datos-contacto p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 15px;
+}
+
+.secciones-contacto {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  border-color: rgba(2, 2, 2, 0.472);
+}
+
+.comentario-contacto {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border-color: rgba(2, 2, 2, 0.472);
+  width: 300px;
+  height: 300px;
+}
+
+.enviar-contacto {
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: rgba(18, 90, 246, 0.657);
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 10px;
+  width: 35%;
+}
+  
+.reset-contacto {
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: rgba(18, 90, 246, 0.657);
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 10px;
+  width: 35%;
+}
+
+.talleres-main section article div {
+  height: 100%;
+}
+
+.mapa-contacto iframe {
+  width: 100%;
+  padding: 15px;
+}
+
+@media screen and (min-width:600px) {
+
+  /*nav*/
+  nav ul li {
+    display: inline-block; 
+  }
+
+  nav ul li a {
+   border: none;
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(65, 65, 65);
+  }
+
+  /*redes sociales flotando*/
+  
+  /*redes flotantes*/
+  .redes-flotantes {
+  display: none;
+  }
+
+
+  
+  /*Index*/
+
+  .arduino-index0 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*pie de pagina*/
+
+  footer section {
+    justify-items:flex-start;
+    padding-left: 30px;    
+  }
+
+  footer section article p {
+    text-align: left;
+  }
+
+
+  /*Quienes somos*/
+
+  .quienessomos-section1 {
+    display: grid;
+    grid-template-areas: 
+     "a a a"
+     "b c d"
+     "e e e"
+     "f g h";
+    grid-template-columns: repeat(3, 1fr)
+  }
+    
+  .quienessomos-section1 article:nth-child(1) {
+    grid-area: a;
+  }
+    
+  .quienessomos-section1 article:nth-child(2) {
+    grid-area: b;
+  }
+    
+  .quienessomos-section1 article:nth-child(3) {
+    grid-area: c;
+  }
+    
+  .quienessomos-section1 article:nth-child(4) {
+     grid-area: d;
+  }
+  .quienessomos-section1 article:nth-child(5) {
+    grid-area: e;
+  }
+    
+  .quienessomos-section1 article:nth-child(6) {
+    grid-area: f;
+  }
+
+  .quienessomos-section1 article:nth-child(7) {
+    grid-area: g;
+  }
+    
+  .quienessomos-section1 article:nth-child(8) {
+    grid-area: h;
+  }
+
+  .quienessomos-main section article p {
+    height: 130px;
+  }
+  /*Talleres*/
+  .talleres-main {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .talleres-boton:hover {
+    opacity: 0.7;
+  }
+
+  /*Descargas*/
+  .descargas-main {
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+  }
+
+  .descargas-main section article ul li {
+    padding: 1.87rem;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+
+  /*redes flotantes*/
+  .redes-flotantes {
+    display: grid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 6.25rem;
+  }
+
+  .redes-img {
+    width: 2.5rem;
+  }
+  .redes-img:hover {
+    opacity: 0.5;
+  }
+
+  /*contacto*/
+  .contacto-main {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1.25rem;
+    grid-column-gap: 1.25rem;
+  }
+
+  .form-contacto {
+    align-items: center;
+    grid-row: 1 / 3;
+    padding:20px;
+  }
+
+  .datos-contacto {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .mapa-contacto {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .comentario-contacto {
+    height: 300px;
+  }
+
+  .reset-contacto:hover{
+    opacity: 0.7;
+  }
+
+  .enviar-contacto:hover{
+    opacity: 0.7;
+  }  
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .talleres-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .quienessomos-main section article p {
+    height: 100px;
+  }
+}
