@@ -6,7 +6,6 @@
 }
 
   /*navegador*/
-
 header {
   background-color: #D7ECFD;
   background-size: cover;
@@ -312,7 +311,7 @@ margin: 3rem;
 .descargas-main section article ul li {
   padding: 1rem;
   font-size: 1.3rem;
-  list-style-image: url(/imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
+  list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
 }
 
 .descargas-main section article ul {
