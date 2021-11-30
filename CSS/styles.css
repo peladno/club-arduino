@@ -23,8 +23,7 @@ header {
   margin-left: 30px;
 } 
 
-nav ul li {
-    display: list-item;
+.nav ul li {
     font-size: 1.6rem;
 }
 
@@ -36,7 +35,7 @@ nav ul li {
   background-color: #F28E23;
 }
 
-nav ul li a {
+.nav ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -93,7 +92,7 @@ nav ul li a {
 
 
 /*footer*/   
-footer section{
+.footer section{
   background-color: rgb(255, 132, 31);
   display: grid;
   grid-template-columns: 1fr;
@@ -105,11 +104,11 @@ footer section{
   padding-left: 0px;
 }
 
-footer section article p {
+.footer section article p {
   text-align: center;
 }
 
-footer {
+.footer {
   justify-items: center;  
 }
 
@@ -122,16 +121,10 @@ footer {
   width: 40px;
 }
 
-footer div p {
+.footer article p {
   color: white;
   font-size: 1.1rem;
 }
-
-footer div p a {
-  color: white;
-  font-size: 1.1rem;
-}
-
 
 /*titulo con imagen*/
 
@@ -432,15 +425,15 @@ margin: 3rem;
 @media screen and (min-width:600px) {
 
   /*nav*/
-  nav ul li {
+  .nav ul li {
     display: inline-block; 
   }
 
-  nav ul li a {
+  .nav ul li a {
    border: none;
   }
 
-  nav ul li a:hover {
+  .nav ul li a:hover {
     background-color: rgb(65, 65, 65);
   }
 
@@ -461,12 +454,12 @@ margin: 3rem;
 
   /*pie de pagina*/
 
-  footer section {
+  .footer section {
     justify-items:flex-start;
     padding-left: 30px;    
   }
 
-  footer section article p {
+  .footer section article p {
     text-align: left;
   }
 
@@ -517,13 +510,14 @@ margin: 3rem;
   .quienessomos-main section article p {
     height: 130px;
   }
+
   /*Talleres*/
   .talleres-main {
     grid-template-columns: 1fr 1fr;
   }
   
   .talleres-boton:hover {
-    opacity: 0.7;
+    background-color: rgba(18, 90, 246, 0.897);
   }
 
   /*Descargas*/
@@ -551,9 +545,10 @@ margin: 3rem;
 
   .redes-img {
     width: 2.5rem;
+    opacity: 0.5;
   }
   .redes-img:hover {
-    opacity: 0.5;
+    opacity: 1;
   }
 
   /*contacto*/
@@ -587,11 +582,11 @@ margin: 3rem;
   }
 
   .reset-contacto:hover{
-    opacity: 0.7;
+    background-color: rgba(18, 90, 246, 0.897);
   }
 
   .enviar-contacto:hover{
-    opacity: 0.7;
+    background-color: rgba(18, 90, 246, 0.897);
   }  
 
 }
