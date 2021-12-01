@@ -126,7 +126,9 @@ header {
 
 .footer-redes img {
   width: 40px;
+  opacity: 1;
 }
+
 
 .footer article p {
   color: white;
@@ -447,14 +449,11 @@ margin: 3rem;
     background-color: rgb(65, 65, 65);
   }
 
-  /*redes sociales flotando*/
   
   /*redes flotantes*/
   .redes-flotantes {
   display: none;
   }
-
-
   
   /*Index*/
 
@@ -643,6 +642,15 @@ margin: 3rem;
   .enviar-contacto:hover{
     background-color: rgba(18, 90, 246, 0.897);
   }  
+
+  /*footer*/
+  .footer-redes img {
+    opacity: 0.5;
+  }
+  
+  .footer-redes img:hover {
+    opacity: 1;
+  }
 
 }
 
