@@ -75,6 +75,7 @@ header {
 .arduino-index0 article p {
   font-size: 1.5rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .arduino-index0 {
@@ -89,6 +90,13 @@ header {
   width: 100%;
 }
 
+
+
+.arduino-index0 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*footer*/   
 .footer section{
@@ -180,6 +188,7 @@ margin: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  margin: 3.125rem;
 }
 
 @keyframes entrada {
@@ -197,6 +206,11 @@ margin: 3rem;
   animation: entrada 700ms ease-out;
   animation-fill-mode: backwards;
   --stagger-delay: 100ms;
+  transition: transform .2s;   
+}
+
+.talleres-main section:hover {
+  transform:scale(1.08);
 }
 
 .talleres-main section:nth-child(1) {
@@ -229,10 +243,6 @@ margin: 3rem;
   font-size: 1.2rem;
   text-align: center;
   padding:0 0 1.5rem ;
-}
-
-.talleres-main {
-  margin: 3.125rem;
 }
 
 .talleres-main section article {
@@ -542,6 +552,43 @@ margin: 3rem;
     text-align: left;
   }
 
+  /*index*/
+  #logo-arduino-negro {
+    width: 150px;
+  }
+  
+  #logo-arduino-negro:hover {
+    width: 150px;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+  }
+  
+  @keyframes moving {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(10deg);
+    }
+    
+    50% {
+      transform: rotate(-0deg);
+    }
+    
+    75% {
+      transform: rotate(-10deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  
+  }
+
   /*redes flotantes*/
   .redes-flotantes {
     display: grid;
@@ -597,6 +644,15 @@ margin: 3rem;
     background-color: rgba(18, 90, 246, 0.897);
   }  
 
+}
+
+/*arduino basico*/
+
+#boton-youtube:hover {
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: .4s;
 }
 
 @media screen and (min-width: 1000px) {
