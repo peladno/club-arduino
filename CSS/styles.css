@@ -53,6 +53,7 @@ header {
 /*index*/
 .principal1 img {
   width: 100%;
+  animation: entrada 700ms ease-out;
 }
 
 .principal1 {
@@ -231,6 +232,10 @@ margin: 3rem;
 
 .talleres-main section article img {
   width: 100%;
+}
+
+.talleres-main section article div {
+  height: 100%;
 }
 
 .talleres-main section article h2 {
@@ -421,10 +426,6 @@ margin: 3rem;
   border-radius: 10px;
   margin: 10px;
   width: 35%;
-}
-
-.talleres-main section article div {
-  height: 100%;
 }
 
 .mapa-contacto iframe {
