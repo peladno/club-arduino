@@ -41,7 +41,7 @@ header {
   padding: 0.18rem 0.62rem;
   text-decoration: none;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   border-width: 1px 2px
 }
 
@@ -128,15 +128,17 @@ header {
 /*titulo con imagen*/
 
 .titulo {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 6.25rem;
   background-image: url(../imagenes/talleres/imgTitulo2.jpg);
-  background-size: cover; 
+  background-size: cover;
+  background-position: center; 
   margin-bottom: 0.93rem;
 }
 
 .titulo h1 {
   font-size: 3.1rem;
+  text-align: center;
 }
 
 /*quienes somos*/
@@ -474,6 +476,10 @@ margin: 3rem;
     grid-template-columns: repeat(3, 1fr)
   }
     
+  .quienessomos-section1 article {
+    padding: .5rem;
+  }
+
   .quienessomos-section1 article:nth-child(1) {
     grid-area: a;
   }
@@ -531,6 +537,10 @@ margin: 3rem;
 }
 
 @media screen and (min-width: 800px) {
+  /*imagen con titulo*/
+  .titulo h1 {
+    text-align: left;
+  }
 
   /*redes flotantes*/
   .redes-flotantes {
