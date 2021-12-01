@@ -90,12 +90,14 @@ header {
   width: 100%;
 }
 
-
-
 .arduino-index0 article {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#logo-arduino-negro {
+  width: 150px;
 }
 
 /*footer*/   
@@ -552,9 +554,7 @@ margin: 3rem;
   }
 
   /*index*/
-  #logo-arduino-negro {
-    width: 150px;
-  }
+  
   
   #logo-arduino-negro:hover {
     width: 150px;
