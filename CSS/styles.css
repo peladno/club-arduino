@@ -102,7 +102,7 @@ header {
 }
 
 /*footer*/   
-.footer section{
+.footer-arduino section{
   background-color: rgb(255, 132, 31);
   display: grid;
   grid-template-columns: 1fr;
@@ -110,15 +110,15 @@ header {
   justify-items: center;
 }
 
-.footer section article {
+.footer-arduino section article {
   padding-left: 0px;
 }
 
-.footer section article p {
+.footer-arduino section article p {
   text-align: center;
 }
 
-.footer {
+.footer-arduino {
   justify-items: center;  
 }
 
@@ -133,7 +133,7 @@ header {
 }
 
 
-.footer article p {
+.footer-arduino article p {
   color: white;
   font-size: 1.1rem;
 }
@@ -465,12 +465,12 @@ margin: 3rem;
 
   /*pie de pagina*/
 
-  .footer section {
+  .footer-arduino section {
     justify-items:flex-start;
     padding-left: 30px;    
   }
 
-  .footer section article p {
+  .footer-arduino section article p {
     text-align: left;
   }
 
