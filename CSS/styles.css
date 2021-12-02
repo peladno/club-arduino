@@ -22,28 +22,21 @@ header {
   margin-left: 30px;
 } 
 
-.nav ul li {
-    font-size: 1.6rem;
+.navbar li a {
+  color: white!important;
+  text-align: left!important;
+  padding: 0.5rem !important;
+  font-size: 1.6rem!important;
 }
 
-.ul-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #F28E23;
+.navbar li a:hover {
+  background-color: rgb(65, 65, 65);
 }
 
-.nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.18rem 0.62rem;
-  text-decoration: none;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 1px 2px
+.dropdown-item:hover {
+  background-color: rgb(65, 65, 65);
 }
+
 
 /*redes flotantes*/
 .redes-flotantes {
@@ -437,20 +430,6 @@ margin: 3rem;
 }
 
 @media screen and (min-width:600px) {
-
-  /*nav*/
-  .nav ul li {
-    display: inline-block; 
-  }
-
-  .nav ul li a {
-   border: none;
-  }
-
-  .nav ul li a:hover {
-    background-color: rgb(65, 65, 65);
-  }
-
   
   /*redes flotantes*/
   .redes-flotantes {
