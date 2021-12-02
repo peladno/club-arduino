@@ -7,7 +7,7 @@
 
   /*navegador*/
 header {
-  background-color: #D7ECFD;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -53,7 +53,7 @@ header {
 /*index*/
 .principal1 img {
   width: 100%;
-  animation: entrada 700ms ease-out;
+  animation: entrada 700ms ease-in;
 }
 
 .principal1 {
@@ -90,8 +90,6 @@ header {
 .placa-div img {
   width: 100%;
 }
-
-
 
 .arduino-index0 article {
   display: flex;
@@ -204,7 +202,7 @@ margin: 3rem;
 }
 
 .talleres-main section {
-  animation: entrada 700ms ease-out;
+  animation: entrada 700ms ease;
   animation-fill-mode: backwards;
   --stagger-delay: 100ms;
   transition: transform .2s;   
