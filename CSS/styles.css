@@ -7,7 +7,7 @@
 
   /*navegador*/
 header {
-  background-color: #D7ECFD;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -53,6 +53,7 @@ header {
 /*index*/
 .principal1 img {
   width: 100%;
+  animation: entrada 700ms ease-in;
 }
 
 .principal1 {
@@ -207,7 +208,7 @@ margin: 3rem;
 }
 
 .talleres-main section {
-  animation: entrada 700ms ease-out;
+  animation: entrada 700ms ease;
   animation-fill-mode: backwards;
   --stagger-delay: 100ms;
   transition: transform .2s;   
@@ -237,6 +238,10 @@ margin: 3rem;
   width: 100%;
 }
 
+.talleres-main section article div {
+  height: 100%;
+}
+
 .talleres-main section article h2 {
   font-size: 2em;
   color: #F28E23;
@@ -254,7 +259,6 @@ margin: 3rem;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
   padding: 1rem;
 }
@@ -425,10 +429,6 @@ margin: 3rem;
   border-radius: 10px;
   margin: 10px;
   width: 35%;
-}
-
-.talleres-main section article div {
-  height: 100%;
 }
 
 .mapa-contacto iframe {
