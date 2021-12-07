@@ -62,7 +62,7 @@ nav button {
 }
 
 
-.arduino-index0 article h1 {
+.arduino-index0 h1 {
   font-size: 2.5rem;
   color: #F28E23; 
   text-align: center;
@@ -70,7 +70,7 @@ nav button {
   text-align: center;
 }
 
-.arduino-index0 article p {
+.arduino-index0 p {
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
@@ -107,11 +107,11 @@ nav button {
   justify-items: center;
 }
 
-.footer-arduino section article {
+.footer-arduino article {
   padding-left: 0px;
 }
 
-.footer-arduino section article p {
+.footer-arduino p {
   text-align: center;
 }
 
@@ -130,7 +130,7 @@ nav button {
 }
 
 
-.footer-arduino article p {
+.footer-arduino p {
   color: white;
   font-size: 1.1rem;
 }
@@ -160,26 +160,23 @@ gap: 2rem;
 margin: 3rem;
 }
 
-.quienessomos-main section article h2 {
+.quienessomos-main h2 {
   font-size: 2.5rem;
   color: #F28E23;
   text-align: center;
 }
 
-.quienessomos-main section article h3 {
+.quienessomos-main h3 {
   font-size: 1.8rem;
   text-align: center;
 }
 
-.quienessomos-main section article img {
+.quienessomos-main img, .quienessomos-main article {
   width: 100%;
 }
 
-.quienessomos-main section article {
-  width: 100%;
-}
 
-.quienessomos-main section article p {
+.quienessomos-main p {
   height: 70px;
   font-size: 1.2rem;
   text-align: center;
@@ -231,27 +228,27 @@ margin: 3rem;
   animation-delay: calc(4 * var(--stagger-delay));
 }
 
-.talleres-main section article img {
+.talleres-main img {
   width: 100%;
 }
 
-.talleres-main section article div {
+.talleres-main div {
   height: 100%;
 }
 
-.talleres-main section article h2 {
+.talleres-main h2 {
   font-size: 2em;
   color: #F28E23;
   text-align: center;
 }
 
-.talleres-main section article p {
+.talleres-main p {
   font-size: 1.2rem;
   text-align: center;
   padding:0 0 1.5rem ;
 }
 
-.talleres-main section article {
+.talleres-main article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   display: flex;
@@ -280,7 +277,7 @@ margin: 3rem;
   margin: 1.5rem;
 }
 
-.arduinobasico-videos article iframe{
+.arduinobasico-videos iframe{
   width: 100%;
 }
 
@@ -290,11 +287,8 @@ margin: 3rem;
   align-items: center;
 }
 
-.arduinobasico-main section p {
-  font-size: 2em;
-}
   
-.arduinobasico-main section p {
+.arduinobasico-main p {
   font-size: 1.6rem;
   text-align: center;
 }
@@ -304,18 +298,18 @@ margin: 3rem;
 }
 
 
-.arduinobasico-main section div a img {
+.arduinobasico-main img {
   width: 150px;
 }
 
 /*Descargas*/
-.descargas-main section h2 {
+.descargas-main h2 {
   font-size: 2em;
   color: #F28E23;
   text-align: center;
 }
 
-.descargas-main section p {
+.descargas-main p {
   font-size: 1.8rem;
   text-align: center;
 }
@@ -325,13 +319,13 @@ margin: 3rem;
   margin-right: 1rem;
 }
   
-.descargas-main section article ul li {
+.descargas-main li {
   padding: 1rem;
   font-size: 1.3rem;
   list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
 }
 
-.descargas-main section article ul {
+.descargas-main ul {
   margin-left: 6.25rem;
   margin-bottom: 0.93rem;
 }
@@ -402,20 +396,7 @@ margin: 3rem;
   height: 300px;
 }
 
-.enviar-contacto {
-  border: none;
-  padding: 10px;
-  color: white;
-  background-color: rgba(18, 90, 246, 0.657);
-  text-align: center;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 10px;
-  margin: 10px;
-  width: 35%;
-}
-  
-.reset-contacto {
+.boton-contacto {
   border: none;
   padding: 10px;
   color: white;
@@ -428,6 +409,7 @@ margin: 3rem;
   width: 35%;
 }
 
+  
 .mapa-contacto iframe {
   width: 100%;
   padding: 15px;
@@ -458,7 +440,7 @@ margin: 3rem;
     padding-left: 30px;    
   }
 
-  .footer-arduino section article p {
+  .footer-arduino p {
     text-align: left;
   }
 
@@ -510,7 +492,7 @@ margin: 3rem;
     grid-area: h;
   }
 
-  .quienessomos-main section article p {
+  .quienessomos-main p {
     height: 130px;
   }
 
@@ -529,7 +511,7 @@ margin: 3rem;
     margin-right: 3.125rem;
   }
 
-  .descargas-main section article ul li {
+  .descargas-main li {
     padding: 1.87rem;
   }
 
@@ -623,13 +605,9 @@ margin: 3rem;
     height: 300px;
   }
 
-  .reset-contacto:hover{
+  .boton-contacto:hover{
     background-color: rgba(18, 90, 246, 0.897);
   }
-
-  .enviar-contacto:hover{
-    background-color: rgba(18, 90, 246, 0.897);
-  }  
 
   /*footer*/
   .footer-redes img {
@@ -657,7 +635,7 @@ margin: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .quienessomos-main section article p {
+  .quienessomos-main p {
     height: 100px;
   }
 }
