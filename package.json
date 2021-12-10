@@ -1,0 +1,25 @@
+{
+  "name": "club-arduino",
+  "version": "1.0.0",
+  "description": "Proyecto para Club Arduino\r @javierpastry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/sass-club-arduino.scss CSS/nuevocss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peladno/club-arduino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peladno/club-arduino/issues"
+  },
+  "homepage": "https://github.com/peladno/club-arduino#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
