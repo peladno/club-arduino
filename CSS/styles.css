@@ -1,261 +1,283 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
-  /*navegador*/
+/*Navegador*/
 header {
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #42b3ff);
   background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 15px;
-  width: auto;
-}
+  width: auto; }
 
 .header-logoimg {
   width: 100px;
-  margin-left: 0px;
-} 
+  margin-left: 0px; }
+  @media screen and (min-width: 600px) {
+    .header-logoimg {
+      width: 150px;
+      margin-left: 30px; } }
 
 .navbar li a {
-  color: white!important;
-  text-align: left!important;
+  color: white !important;
+  text-align: left !important;
   padding: 0.5rem !important;
-  font-size: 1.6rem!important;
-}
-
-.navbar li a:hover {
-  background-color: rgb(65, 65, 65);
-}
+  font-size: 1.6rem !important; }
+  .navbar li a:hover {
+    background-color: #414141; }
 
 .dropdown-item:hover {
-  background-color: rgb(65, 65, 65);
-}
+  background-color: #414141; }
 
 nav button {
-  margin: 5px;
-}
-
+  margin: 5px; }
 
 /*redes flotantes*/
 .redes-flotantes {
-  display: none;
-}
+  display: none; }
+  @media screen and (min-width: 600px) {
+    .redes-flotantes {
+      display: none; } }
+  @media screen and (min-width: 800px) {
+    .redes-flotantes {
+      display: grid;
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin-top: 6.25rem; } }
+
+@media screen and (min-width: 800px) {
+  .redes-img {
+    width: 2.5rem;
+    opacity: 0.5; }
+    .redes-img:hover {
+      opacity: 1; } }
 
 /*index*/
-.principal1 img {
-  width: 100%;
-  animation: entrada 700ms ease-in;
-}
-
 .principal1 {
   position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-
-.arduino-index0 h1 {
-  font-size: 2.5rem;
-  color: #F28E23; 
-  text-align: center;
-  padding: 0.93rem;
-  text-align: center;
-}
-
-.arduino-index0 p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem;
-}
+  justify-content: center; }
+  .principal1 img {
+    width: 100%;
+    animation: entrada 700ms ease-in; }
 
 .arduino-index0 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 1.25rem;
-  margin: 2.5rem;
-}
+  margin: 2.5rem; }
+  @media screen and (min-width: 600px) {
+    .arduino-index0 {
+      grid-template-columns: 1fr 1fr; } }
+  .arduino-index0 h1 {
+    font-size: 2.5rem;
+    color: #F28E23;
+    text-align: center;
+    padding: 0.93rem;
+    text-align: center; }
+  .arduino-index0 p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem; }
+  .arduino-index0 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .placa-div img {
-  width: 100%;
-}
-
-.arduino-index0 article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  width: 100%; }
 
 #logo-arduino-negro {
-  width: 150px;
-}
+  width: 150px; }
+  @media screen and (min-width: 800px) {
+    #logo-arduino-negro:hover {
+      animation-name: moving;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: .4s; }
+    @keyframes moving {
+      0% {
+        transform: rotate(0deg); }
+      25% {
+        transform: rotate(10deg); }
+      50% {
+        transform: rotate(0deg); }
+      75% {
+        transform: rotate(-10deg); }
+      100% {
+        transform: rotate(0deg); } } }
 
-/*footer*/   
-.footer-arduino section{
-  background-color: rgb(255, 132, 31);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.footer-arduino article {
-  padding-left: 0px;
-}
-
-.footer-arduino p {
-  text-align: center;
-}
-
+/*footer*/
 .footer-arduino {
-  justify-items: center;  
-}
+  justify-items: center; }
+  .footer-arduino section {
+    background-color: #F28E23;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center; }
+    @media screen and (min-width: 600px) {
+      .footer-arduino section {
+        justify-items: flex-start;
+        padding-left: 30px; } }
+  .footer-arduino article {
+    padding-left: 0px; }
+  .footer-arduino p {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 600px) {
+      .footer-arduino p {
+        text-align: left; } }
 
 .footer-logo {
   width: 100px;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .footer-redes img {
   width: 40px;
-  opacity: 1;
-}
-
-
-.footer-arduino p {
-  color: white;
-  font-size: 1.1rem;
-}
+  opacity: 1; }
+  @media screen and (min-width: 800px) {
+    .footer-redes img {
+      opacity: 0.5; }
+      .footer-redes img:hover {
+        opacity: 1; } }
 
 /*titulo con imagen*/
-
 .titulo {
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 6.25rem;
   background-image: url(../imagenes/talleres/imgTitulo2.jpg);
   background-size: cover;
-  background-position: center; 
-  margin-bottom: 0.93rem;
-}
-
-.titulo h1 {
-  font-size: 3.1rem;
-  text-align: center;
-}
+  background-position: center;
+  margin-bottom: 0.93rem; }
+  .titulo h1 {
+    font-size: 3.1rem;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      .titulo h1 {
+        text-align: left; } }
 
 /*quienes somos*/
-
 .quienessomos-section1 {
-display: grid;
-grid-template-rows: repeat(auto-fit);
-gap: 2rem;
-margin: 3rem;
-}
+  display: grid;
+  grid-template-rows: repeat(auto-fit);
+  gap: 2rem;
+  margin: 3rem; }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 {
+      display: grid;
+      grid-template-areas: "a a a" "b c d" "e e e" "f g h";
+      grid-template-columns: repeat(3, 1fr); } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article {
+      padding: .5rem; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(1) {
+      grid-area: a; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(2) {
+      grid-area: b; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(3) {
+      grid-area: c; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(4) {
+      grid-area: d; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(5) {
+      grid-area: e; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(6) {
+      grid-area: f; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(7) {
+      grid-area: g; } }
+  @media screen and (min-width: 600px) {
+    .quienessomos-section1 article:nth-child(8) {
+      grid-area: h; } }
 
 .quienessomos-main h2 {
-  font-size: 2.5rem;
+  font-size: 2em;
   color: #F28E23;
-  text-align: center;
-}
+  text-align: center; }
 
 .quienessomos-main h3 {
   font-size: 1.8rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .quienessomos-main img, .quienessomos-main article {
-  width: 100%;
-}
-
+  width: 100%; }
 
 .quienessomos-main p {
-  height: 70px;
+  height: 100%;
   font-size: 1.6rem;
-  text-align: center;
-}
+  text-align: center; }
 
 /*talleres*/
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: scale(0.3); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
 .talleres-main {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  margin: 3.125rem;
-}
-
-@keyframes entrada {
-  from {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.talleres-main section {
-  animation: entrada 700ms ease;
-  animation-fill-mode: backwards;
-  --stagger-delay: 100ms;
-  transition: transform .2s;   
-}
-
-.talleres-main section:hover {
-  transform:scale(1.08);
-}
-
-.talleres-main section:nth-child(1) {
-  animation-delay: calc(1 * var(--stagger-delay));
-}
-
-.talleres-main section:nth-child(2) {
-  animation-delay: calc(2 * var(--stagger-delay));
-}
-
-.talleres-main section:nth-child(3) {
-  animation-delay: calc(3 * var(--stagger-delay));
-}
-
-.talleres-main section:nth-child(4) {
-  animation-delay: calc(4 * var(--stagger-delay));
-}
-
-.talleres-main img {
-  width: 100%;
-}
-
-.talleres-main div {
-  height: 100%;
-}
-
-.talleres-main h2 {
-  font-size: 2em;
-  color: #F28E23;
-  text-align: center;
-}
-
-.talleres-main p {
-  font-size: 1.2rem;
-  text-align: center;
-  padding:0 0 1.5rem ;
-}
-
-.talleres-main article {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 1rem;
-}
+  margin: 3.125rem; }
+  @media screen and (min-width: 600px) {
+    .talleres-main {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (min-width: 1000px) {
+    .talleres-main {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  .talleres-main img {
+    width: 100%; }
+  .talleres-main div {
+    height: 100%; }
+  .talleres-main h2 {
+    font-size: 2em;
+    color: #F28E23;
+    text-align: center; }
+  .talleres-main p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 0 1.5rem; }
+  .talleres-main article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem; }
+  .talleres-main section {
+    animation: entrada 700ms ease;
+    animation-fill-mode: backwards;
+    --stagger-delay: 100ms;
+    transition: transform .2s; }
+    .talleres-main section:hover {
+      transform: scale(1.08); }
+    .talleres-main section:nth-child(1) {
+      animation-delay: calc(1 * var(--stagger-delay)); }
+    .talleres-main section:nth-child(2) {
+      animation-delay: calc(2 * var(--stagger-delay)); }
+    .talleres-main section:nth-child(3) {
+      animation-delay: calc(3 * var(--stagger-delay)); }
+    .talleres-main section:nth-child(4) {
+      animation-delay: calc(4 * var(--stagger-delay)); }
 
 .talleres-boton {
   border: none;
@@ -265,91 +287,100 @@ margin: 3rem;
   text-align: center;
   cursor: pointer;
   font-size: 18px;
-  width: 100%;
-}
+  width: 100%; }
+  @media screen and (min-width: 600px) {
+    .talleres-boton:hover {
+      background-color: rgba(18, 90, 246, 0.897); } }
 
 /*Arduino básico*/
-
 .arduinobasico-videos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 1.5rem;
-}
-
-.arduinobasico-videos iframe{
-  width: 100%;
-}
+  margin: 1.5rem; }
+  @media screen and (min-width: 1050px) {
+    .arduinobasico-videos {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  .arduinobasico-videos iframe {
+    width: 100%; }
 
 .arduino-basico-continuacion {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
-  
 .arduinobasico-main p {
   font-size: 1.6rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .arduinobasico-main section {
-  padding: 0.625rem;
-}
-
+  padding: 0.625rem; }
 
 .arduinobasico-main img {
-  width: 150px;
-}
+  width: 150px; }
+
+@media screen and (min-width: 800px) {
+  #boton-youtube:hover {
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: .4s; } }
 
 /*Descargas*/
-.descargas-main h2 {
-  font-size: 2em;
-  color: #F28E23;
-  text-align: center;
-}
-
-.descargas-main p {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
 .descargas-main {
   margin-left: 1rem;
-  margin-right: 1rem;
-}
-  
-.descargas-main li {
-  padding: 1rem;
-  font-size: 1.3rem;
-  list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
-}
+  margin-right: 1rem; }
+  @media screen and (min-width: 600px) {
+    .descargas-main {
+      margin-left: 3.125rem;
+      margin-right: 3.125rem; } }
+  .descargas-main h2 {
+    font-size: 2em;
+    color: #F28E23;
+    text-align: center; }
+  .descargas-main p {
+    font-size: 1.6rem;
+    text-align: center; }
+  .descargas-main ul {
+    margin-left: 6.25rem;
+    margin-bottom: 0.93rem; }
+    .descargas-main ul li {
+      padding: 1rem;
+      font-size: 1.2rem;
+      list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png); }
+      @media screen and (min-width: 600px) {
+        .descargas-main ul li {
+          padding: 1.87rem; } }
 
-.descargas-main ul {
-  margin-left: 6.25rem;
-  margin-bottom: 0.93rem;
-}
-  
 /*contacto*/
-
 .contacto-main {
   margin: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr .5fr .5fr;
   grid-row-gap: 15px;
-  grid-column-gap: none;
-}
+  grid-column-gap: none; }
+  @media screen and (min-width: 800px) {
+    .contacto-main {
+      margin: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 1.25rem;
+      grid-column-gap: 1.25rem; } }
+
 .secciones-contacto {
   padding: 10px;
   margin: 10px;
   font-size: 1rem;
   border-radius: 10px;
-}
+  font-size: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  border-color: rgba(2, 2, 2, 0.472); }
 
 .comentario-contacto {
-  width: 300px;
-}
+  width: 300px; }
 
 .form-contacto {
   display: flex;
@@ -358,33 +389,35 @@ margin: 3rem;
   align-items: center;
   font-size: 1.1rem;
   grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-  
+  grid-row: 1 / 2; }
+  @media screen and (min-width: 800px) {
+    .form-contacto {
+      align-items: center;
+      grid-row: 1 / 3;
+      padding: 20px; } }
+
 .datos-contacto {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-  
+  grid-row: 2 / 3; }
+  .datos-contacto p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 15px; }
+  @media screen and (min-width: 800px) {
+    .datos-contacto {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; } }
+
 .mapa-contacto {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.datos-contacto p {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  padding: 15px;
-}
-
-.secciones-contacto {
-  padding: 10px;
-  margin: 10px;
-  font-size: 1rem;
-  width: 300px;
-  border-radius: 10px;
-  border-color: rgba(2, 2, 2, 0.472);
-}
+  grid-row: 3 / 4; }
+  .mapa-contacto iframe {
+    width: 100%;
+    padding: 15px; }
+  @media screen and (min-width: 800px) {
+    .mapa-contacto {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3; } }
 
 .comentario-contacto {
   padding: 10px;
@@ -393,8 +426,10 @@ margin: 3rem;
   border-radius: 10px;
   border-color: rgba(2, 2, 2, 0.472);
   width: 300px;
-  height: 300px;
-}
+  height: 300px; }
+  @media screen and (min-width: 800px) {
+    .comentario-contacto {
+      height: 300px; } }
 
 .boton-contacto {
   border: none;
@@ -406,236 +441,7 @@ margin: 3rem;
   font-size: 1rem;
   border-radius: 10px;
   margin: 10px;
-  width: 35%;
-}
-
-  
-.mapa-contacto iframe {
-  width: 100%;
-  padding: 15px;
-}
-
-@media screen and (min-width:600px) {
-  
-  /*header*/
-  .header-logoimg {
-    width: 150px;
-    margin-left: 30px;
-  } 
-
-  /*redes flotantes*/
-  .redes-flotantes {
-  display: none;
-  }
-  
-  /*Index*/
-  .arduino-index0 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /*pie de pagina*/
-
-  .footer-arduino section {
-    justify-items:flex-start;
-    padding-left: 30px;    
-  }
-
-  .footer-arduino p {
-    text-align: left;
-  }
-
-
-  /*Quienes somos*/
-
-  .quienessomos-section1 {
-    display: grid;
-    grid-template-areas: 
-     "a a a"
-     "b c d"
-     "e e e"
-     "f g h";
-    grid-template-columns: repeat(3, 1fr)
-  }
-    
-  .quienessomos-section1 article {
-    padding: .5rem;
-  }
-
-  .quienessomos-section1 article:nth-child(1) {
-    grid-area: a;
-  }
-    
-  .quienessomos-section1 article:nth-child(2) {
-    grid-area: b;
-  }
-    
-  .quienessomos-section1 article:nth-child(3) {
-    grid-area: c;
-  }
-    
-  .quienessomos-section1 article:nth-child(4) {
-     grid-area: d;
-  }
-  .quienessomos-section1 article:nth-child(5) {
-    grid-area: e;
-  }
-    
-  .quienessomos-section1 article:nth-child(6) {
-    grid-area: f;
-  }
-
-  .quienessomos-section1 article:nth-child(7) {
-    grid-area: g;
-  }
-    
-  .quienessomos-section1 article:nth-child(8) {
-    grid-area: h;
-  }
-
-  .quienessomos-main p {
-    height: 130px;
-  }
-
-  /*Talleres*/
-  .talleres-main {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .talleres-boton:hover {
-    background-color: rgba(18, 90, 246, 0.897);
-  }
-
-  /*Descargas*/
-  .descargas-main {
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
-  }
-
-  .descargas-main li {
-    padding: 1.87rem;
-  }
-
-}
-
-@media screen and (min-width: 800px) {
-  /*imagen con titulo*/
-  .titulo h1 {
-    text-align: left;
-  }
-
-  /*index*/
-  
-  
-  #logo-arduino-negro:hover {
-    width: 150px;
-    animation-name: moving;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: .4s;
-  }
-  
-  @keyframes moving {
-  
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    25% {
-      transform: rotate(10deg);
-    }
-    
-    50% {
-      transform: rotate(-0deg);
-    }
-    
-    75% {
-      transform: rotate(-10deg);
-    }
-  
-    100% {
-      transform: rotate(0deg);
-    }
-  
-  }
-
-  /*redes flotantes*/
-  .redes-flotantes {
-    display: grid;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: 6.25rem;
-  }
-
-  .redes-img {
-    width: 2.5rem;
-    opacity: 0.5;
-  }
-  .redes-img:hover {
-    opacity: 1;
-  }
-
-  /*contacto*/
-  .contacto-main {
-    margin: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 1.25rem;
-    grid-column-gap: 1.25rem;
-  }
-
-  .form-contacto {
-    align-items: center;
-    grid-row: 1 / 3;
-    padding:20px;
-  }
-
-  .datos-contacto {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .mapa-contacto {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .comentario-contacto {
-    height: 300px;
-  }
-
-  .boton-contacto:hover{
-    background-color: rgba(18, 90, 246, 0.897);
-  }
-
-  /*footer*/
-  .footer-redes img {
-    opacity: 0.5;
-  }
-  
-  .footer-redes img:hover {
-    opacity: 1;
-  }
-
-}
-
-/*arduino basico*/
-
-#boton-youtube:hover {
-  animation-name: moving;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: .4s;
-}
-
-@media screen and (min-width: 1000px) {
-
-  .talleres-main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .quienessomos-main p {
-    height: 100px;
-  }
-}
+  width: 35%; }
+  @media screen and (min-width: 800px) {
+    .boton-contacto:hover {
+      background-color: rgba(18, 90, 246, 0.897); } }

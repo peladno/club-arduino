@@ -23,6 +23,13 @@ header {
 .header-logoimg {
     width: 100px;
     margin-left: 0px;
+
+    @media screen and (min-width:600px) {
+
+        width: 150px;
+        margin-left: 30px;
+          
+    }
 } 
 
 .navbar li a {
@@ -47,6 +54,32 @@ nav button {
 /*redes flotantes*/
 .redes-flotantes {
     display: none;
+
+    @media screen and (min-width:600px) {
+    
+        display: none;
+    }
+
+    @media screen and (min-width: 800px) {
+
+        display: grid;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 6.25rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .redes-img {
+
+        width: 2.5rem;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
   
 /*index*/
@@ -70,6 +103,11 @@ nav button {
     grid-template-rows: 1fr;
     grid-column-gap: 1.25rem;
     margin: 2.5rem;
+
+    @media screen and (min-width:600px) {
+
+        grid-template-columns: 1fr 1fr;
+    }
 
     h1 {
         font-size: 2.5rem;
@@ -98,6 +136,39 @@ nav button {
 
 #logo-arduino-negro {
     width: 150px;
+
+    @media screen and (min-width: 800px) {
+        &:hover {
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+
+        @keyframes moving {
+  
+            0% {
+              transform: rotate(0deg);
+            }
+          
+            25% {
+              transform: rotate(10deg);
+            }
+            
+            50% {
+              transform: rotate(-0deg);
+            }
+            
+            75% {
+              transform: rotate(-10deg);
+            }
+          
+            100% {
+              transform: rotate(0deg);
+            }
+          
+          }
+        }
+    }
 }
 
 /*footer*/
@@ -111,6 +182,12 @@ nav button {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
+
+        @media screen and (min-width:600px) {
+
+            justify-items:flex-start;
+            padding-left: 30px; 
+        }
     }
 
     article {
@@ -120,8 +197,31 @@ nav button {
     p {
         text-align: center;
         color: $color-font2;
-        font-size: $font-size-p2;
+        font-size: 1.1rem;
+
+        @media screen and (min-width:600px) {
+
+            text-align: left;
+        }
     } 
+}
+
+.footer-logo {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.footer-redes img {
+    width: 40px;
+    opacity: 1;
+
+    @media screen and (min-width: 800px) {
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
 
 /*titulo con imagen*/
@@ -137,6 +237,10 @@ nav button {
     h1 {
         font-size: 3.1rem;
         text-align: center;
+
+        @media screen and (min-width: 800px) {
+            text-align: left;
+        }
     }
 }
 
@@ -147,6 +251,70 @@ nav button {
     grid-template-rows: repeat(auto-fit);
     gap: 2rem;
     margin: 3rem;
+    @media screen and (min-width:600px) {
+
+    display: grid;
+    grid-template-areas: 
+     "a a a"
+     "b c d"
+     "e e e"
+     "f g h";
+    grid-template-columns: repeat(3, 1fr)
+
+    }
+    article {
+        @media screen and (min-width:600px) {
+        padding: .5rem;
+        }
+
+        &:nth-child(1){
+            @media screen and (min-width:600px){
+                grid-area: a;
+            }  
+        }
+
+        &:nth-child(2){
+            @media screen and (min-width:600px){
+                grid-area: b;
+            }  
+        }
+        &:nth-child(3){
+            @media screen and (min-width:600px){
+                grid-area: c;
+            }  
+        }
+
+        &:nth-child(4){
+            @media screen and (min-width:600px){
+                grid-area: d;
+            }  
+        }
+
+        &:nth-child(5){
+            @media screen and (min-width:600px){
+                grid-area: e;
+            }  
+        }
+
+        &:nth-child(6){
+            @media screen and (min-width:600px){
+                grid-area: f;
+            }  
+        }
+
+        &:nth-child(7){
+            @media screen and (min-width:600px){
+                grid-area: g;
+            }  
+        }
+
+        &:nth-child(8){
+            @media screen and (min-width:600px){
+                grid-area: h;
+            }  
+        }
+    }
+
 }
 
 .quienessomos-main {
@@ -166,9 +334,10 @@ nav button {
     }
 
     p {
-        height: 70px;
+        height: 100%;
         font-size: $font-size-p;
         text-align: center;
+
     }
 }
 
@@ -189,6 +358,14 @@ nav button {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     margin: 3.125rem;
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
     img {
         width: 100%;
@@ -259,5 +436,211 @@ nav button {
     cursor: pointer;
     font-size: 18px;
     width: 100%;
+
+    &:hover {
+        @media screen and (min-width: 600px) {
+            background-color: rgba(18, 90, 246, 0.897);
+        }
+    }
   }
+
+/*Arduino básico*/
+
+.arduinobasico-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 1.5rem;
+
+    @media screen and (min-width: 1050px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+
+.arduino-basico-continuacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arduinobasico-main  {
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+    }
+
+    section {
+        padding: 0.625rem;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #boton-youtube:hover {
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+      }
+}
+
+/*Descargas*/
+
+.descargas-main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @media screen and (min-width: 600px) {
+
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+        color: $color-font;
+        text-align: center;
+    }
+
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+    }
+
+    ul {
+        margin-left: 6.25rem;
+        margin-bottom: 0.93rem;
+
+        li {
+            padding: 1rem;
+            font-size: $font-size-p2;
+            list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
+
+            @media screen and (min-width: 600px) {
+                padding: 1.87rem;
+            }
+        }
+    }
+}
+
+/*contacto*/
+
+.contacto-main {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+    grid-row-gap: 15px;
+    grid-column-gap: none;
+
+    @media screen and (min-width: 800px) {
+
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1.25rem;
+        grid-column-gap: 1.25rem;
+    }
+}
+
+.secciones-contacto {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border-radius: 10px;
+    border-color: rgba(2, 2, 2, 0.472);
+}
+
+.comentario-contacto {
+    width: 300px;
+}
   
+  .form-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    font-size: 1.1rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (min-width: 800px) {
+        align-items: center;
+        grid-row: 1 / 3;
+        padding:20px;
+    }
+}
+    
+  .datos-contacto {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    p {
+        font-size: $font-size-p;
+        line-height: 1.4;
+        padding: 15px;
+      }
+
+    @media screen and (min-width: 800px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    } 
+}
+
+.mapa-contacto {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    iframe {
+        width: 100%;
+        padding: 15px;
+    }
+
+    @media screen and (min-width: 800px) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+.comentario-contacto {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: rgba(2, 2, 2, 0.472);
+    width: 300px;
+    height: 300px;
+
+    @media screen and (min-width: 800px) {
+        height: 300px;
+    }
+}
+  
+.boton-contacto {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: rgba(18, 90, 246, 0.657);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin: 10px;
+    width: 35%;
+
+    &:hover {
+        @media screen and (min-width: 800px) {
+            background-color: rgba(18, 90, 246, 0.897);
+        }
+    }
+}
