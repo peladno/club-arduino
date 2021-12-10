@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@import "variables";
+
+/*Navegador*/
+
+header {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    width: auto;
+  }
+
+.header-logoimg {
+    width: 100px;
+    margin-left: 0px;
+} 
+
+.navbar li a {
+    color: $color-font2 !important;
+    text-align: left!important;
+    padding: 0.5rem !important;
+    font-size: $font-size-p !important;
+
+    &:hover {
+        background-color: rgb(65, 65, 65);
+    }
+}
+
+.dropdown-item:hover {
+    background-color: rgb(65, 65, 65);
+}
+  
+nav button {
+    margin: 5px;
+}
+
+/*redes flotantes*/
+.redes-flotantes {
+    display: none;
+}
+  
+/*index*/
+
+.principal1 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        width: 100%;
+        animation: entrada 700ms ease-in;
+  }
+}
+
+.arduino-index0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.25rem;
+    margin: 2.5rem;
+
+    h1 {
+        font-size: 2.5rem;
+        color: $color-font; 
+        text-align: center;
+        padding: 0.93rem;
+        text-align: center;
+    } 
+    
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+        padding: 1rem;
+      }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.placa-div img {
+    width: 100%;
+}
+
+#logo-arduino-negro {
+    width: 150px;
+}
+
+/*footer*/
+
+.footer-arduino {
+    justify-items: center;
+    
+    section{
+        background-color: $color-font;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    article {
+        padding-left: 0px;
+    }
+
+    p {
+        text-align: center;
+        color: $color-font2;
+        font-size: 1.1rem;
+    }
+    
+}
