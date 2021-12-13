@@ -248,9 +248,9 @@ nav button {
 
 .quienessomos-section1 {
     display: grid;
-    grid-template-rows: repeat(auto-fit);
     gap: 2rem;
     margin: 3rem;
+
     @media screen and (min-width:600px) {
 
     display: grid;
@@ -334,7 +334,6 @@ nav button {
     }
 
     p {
-        height: 100%;
         font-size: $font-size-p;
         text-align: center;
 
