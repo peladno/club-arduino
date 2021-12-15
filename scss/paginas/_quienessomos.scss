@@ -1,0 +1,95 @@
+/*quienes somos*/
+
+.quienessomos-section1 {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem;
+
+    @media screen and (min-width:600px) {
+
+    display: grid;
+    grid-template-areas: 
+     "a a a"
+     "b c d"
+     "e e e"
+     "f g h";
+    grid-template-columns: repeat(3, 1fr)
+
+    }
+    article {
+        @media screen and (min-width:600px) {
+        padding: .5rem;
+        }
+
+        &:nth-child(1){
+            @media screen and (min-width:600px){
+                grid-area: a;
+            }  
+        }
+
+        &:nth-child(2){
+            @media screen and (min-width:600px){
+                grid-area: b;
+            }  
+        }
+        &:nth-child(3){
+            @media screen and (min-width:600px){
+                grid-area: c;
+            }  
+        }
+
+        &:nth-child(4){
+            @media screen and (min-width:600px){
+                grid-area: d;
+            }  
+        }
+
+        &:nth-child(5){
+            @media screen and (min-width:600px){
+                grid-area: e;
+            }  
+        }
+
+        &:nth-child(6){
+            @media screen and (min-width:600px){
+                grid-area: f;
+            }  
+        }
+
+        &:nth-child(7){
+            @media screen and (min-width:600px){
+                grid-area: g;
+            }  
+        }
+
+        &:nth-child(8){
+            @media screen and (min-width:600px){
+                grid-area: h;
+            }  
+        }
+    }
+
+}
+
+.quienessomos-main {
+    h2 {
+        font-size: $font-size-h2;
+        color: $color-font;
+        text-align: center;
+      }
+
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    } 
+
+    img, article {
+        width: 100%;
+    }
+
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+
+    }
+}

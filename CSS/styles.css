@@ -59,6 +59,57 @@ nav button {
     .redes-img:hover {
       opacity: 1; } }
 
+/*footer*/
+.footer-arduino {
+  justify-items: center; }
+  .footer-arduino section {
+    background-color: #F28E23;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center; }
+    @media screen and (min-width: 600px) {
+      .footer-arduino section {
+        justify-items: flex-start;
+        padding-left: 30px; } }
+  .footer-arduino article {
+    padding-left: 0px; }
+  .footer-arduino p {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem; }
+    @media screen and (min-width: 600px) {
+      .footer-arduino p {
+        text-align: left; } }
+
+.footer-logo {
+  width: 100px;
+  margin-top: 15px; }
+
+.footer-redes img {
+  width: 40px;
+  opacity: 1; }
+  @media screen and (min-width: 800px) {
+    .footer-redes img {
+      opacity: 0.5; }
+      .footer-redes img:hover {
+        opacity: 1; } }
+
+/*titulo con imagen*/
+.titulo {
+  color: white;
+  padding: 6.25rem;
+  background-image: url(../imagenes/talleres/imgTitulo2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.93rem; }
+  .titulo h1 {
+    font-size: 3.1rem;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      .titulo h1 {
+        text-align: left; } }
+
 /*index*/
 .principal1 {
   position: static;
@@ -117,57 +168,6 @@ nav button {
       100% {
         transform: rotate(0deg); } } }
 
-/*footer*/
-.footer-arduino {
-  justify-items: center; }
-  .footer-arduino section {
-    background-color: #F28E23;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center; }
-    @media screen and (min-width: 600px) {
-      .footer-arduino section {
-        justify-items: flex-start;
-        padding-left: 30px; } }
-  .footer-arduino article {
-    padding-left: 0px; }
-  .footer-arduino p {
-    text-align: center;
-    color: white;
-    font-size: 1.1rem; }
-    @media screen and (min-width: 600px) {
-      .footer-arduino p {
-        text-align: left; } }
-
-.footer-logo {
-  width: 100px;
-  margin-top: 15px; }
-
-.footer-redes img {
-  width: 40px;
-  opacity: 1; }
-  @media screen and (min-width: 800px) {
-    .footer-redes img {
-      opacity: 0.5; }
-      .footer-redes img:hover {
-        opacity: 1; } }
-
-/*titulo con imagen*/
-.titulo {
-  color: white;
-  padding: 6.25rem;
-  background-image: url(../imagenes/talleres/imgTitulo2.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 0.93rem; }
-  .titulo h1 {
-    font-size: 3.1rem;
-    text-align: center; }
-    @media screen and (min-width: 800px) {
-      .titulo h1 {
-        text-align: left; } }
-
 /*quienes somos*/
 .quienessomos-section1 {
   display: grid;
@@ -176,7 +176,10 @@ nav button {
   @media screen and (min-width: 600px) {
     .quienessomos-section1 {
       display: grid;
-      grid-template-areas: "a a a" "b c d" "e e e" "f g h";
+      grid-template-areas: "a a a"
+ "b c d"
+ "e e e"
+ "f g h";
       grid-template-columns: repeat(3, 1fr); } }
   @media screen and (min-width: 600px) {
     .quienessomos-section1 article {
@@ -324,32 +327,6 @@ nav button {
     animation-timing-function: ease-in;
     animation-duration: .4s; } }
 
-/*Descargas*/
-.descargas-main {
-  margin-left: 1rem;
-  margin-right: 1rem; }
-  @media screen and (min-width: 600px) {
-    .descargas-main {
-      margin-left: 3.125rem;
-      margin-right: 3.125rem; } }
-  .descargas-main h2 {
-    font-size: 2em;
-    color: #F28E23;
-    text-align: center; }
-  .descargas-main p {
-    font-size: 1.6rem;
-    text-align: center; }
-  .descargas-main ul {
-    margin-left: 6.25rem;
-    margin-bottom: 0.93rem; }
-    .descargas-main ul li {
-      padding: 1rem;
-      font-size: 1.2rem;
-      list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png); }
-      @media screen and (min-width: 600px) {
-        .descargas-main ul li {
-          padding: 1.87rem; } }
-
 /*contacto*/
 .contacto-main {
   margin: 2rem;
@@ -443,3 +420,29 @@ nav button {
   @media screen and (min-width: 800px) {
     .boton-contacto:hover {
       background-color: rgba(18, 90, 246, 0.897); } }
+
+/*Descargas*/
+.descargas-main {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media screen and (min-width: 600px) {
+    .descargas-main {
+      margin-left: 3.125rem;
+      margin-right: 3.125rem; } }
+  .descargas-main h2 {
+    font-size: 2em;
+    color: #F28E23;
+    text-align: center; }
+  .descargas-main p {
+    font-size: 1.6rem;
+    text-align: center; }
+  .descargas-main ul {
+    margin-left: 6.25rem;
+    margin-bottom: 0.93rem; }
+    .descargas-main ul li {
+      padding: 1rem;
+      font-size: 1.2rem;
+      list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png); }
+      @media screen and (min-width: 600px) {
+        .descargas-main ul li {
+          padding: 1.87rem; } }

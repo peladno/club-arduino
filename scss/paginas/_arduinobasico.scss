@@ -1,0 +1,45 @@
+/*Arduino básico*/
+
+.arduinobasico-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 1.5rem;
+
+    @media screen and (min-width: 1050px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+
+.arduino-basico-continuacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arduinobasico-main  {
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+    }
+
+    section {
+        padding: 0.625rem;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #boton-youtube:hover {
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+      }
+}

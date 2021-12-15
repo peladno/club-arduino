@@ -1,0 +1,19 @@
+/*titulo con imagen*/
+
+.titulo {
+    color: $color-font2;
+    padding: 6.25rem;
+    background-image: url(../imagenes/talleres/imgTitulo2.jpg);
+    background-size: cover;
+    background-position: center; 
+    margin-bottom: 0.93rem;
+    
+    h1 {
+        font-size: 3.1rem;
+        text-align: center;
+
+        @media screen and (min-width: 800px) {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/*footer*/
+
+.footer-arduino {
+    justify-items: center;
+    
+    section{
+        background-color: $color-font;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+
+        @media screen and (min-width:600px) {
+
+            justify-items:flex-start;
+            padding-left: 30px; 
+        }
+    }
+
+    article {
+        padding-left: 0px;
+    }
+
+    p {
+        text-align: center;
+        color: $color-font2;
+        font-size: 1.1rem;
+
+        @media screen and (min-width:600px) {
+
+            text-align: left;
+        }
+    } 
+}
+
+.footer-logo {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.footer-redes img {
+    width: 40px;
+    opacity: 1;
+
+    @media screen and (min-width: 800px) {
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

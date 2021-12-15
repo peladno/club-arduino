@@ -1,0 +1,44 @@
+
+/*Navegador*/
+
+header {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    width: auto;
+  }
+
+.header-logoimg {
+    width: 100px;
+    margin-left: 0px;
+
+    @media screen and (min-width:600px) {
+
+        width: 150px;
+        margin-left: 30px;
+          
+    }
+} 
+
+.navbar li a {
+    color: $color-font2 !important;
+    text-align: left!important;
+    padding: 0.5rem !important;
+    font-size: $font-size-p !important;
+
+    &:hover {
+        background-color: rgb(65, 65, 65);
+    }
+}
+
+.dropdown-item:hover {
+    background-color: rgb(65, 65, 65);
+}
+  
+nav button {
+    margin: 5px;
+}
