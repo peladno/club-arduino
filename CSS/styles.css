@@ -176,10 +176,7 @@ nav button {
   @media screen and (min-width: 600px) {
     .quienessomos-section1 {
       display: grid;
-      grid-template-areas: "a a a"
- "b c d"
- "e e e"
- "f g h";
+      grid-template-areas: "a a a" "b c d" "e e e" "f g h";
       grid-template-columns: repeat(3, 1fr); } }
   @media screen and (min-width: 600px) {
     .quienessomos-section1 article {
