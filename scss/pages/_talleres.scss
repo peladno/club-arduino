@@ -45,15 +45,6 @@
         padding:0 0 1.5rem ;
     }
 
-    article {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 1rem;
-    }
-
 
     section {
         animation: entrada 700ms ease;
@@ -85,19 +76,9 @@
    
 }
 
-.talleres-boton {
-    border: none;
-    padding: 12px;
-    color: white;
-    background-color: rgba(18, 90, 246, 0.657);
-    text-align: center;
-    cursor: pointer;
-    font-size: 18px;
-    width: 100%;
-
+.boton {
     &:hover {
-        @media screen and (min-width: 600px) {
             background-color: rgba(18, 90, 246, 0.897);
-        }
+
     }
   }
