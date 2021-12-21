@@ -13,7 +13,7 @@
      "b c d"
      "e e e"
      "f g h";
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
 
     }
     article {
@@ -79,12 +79,16 @@
       }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: $font-size-h2;
         text-align: center;
     } 
 
     img, article {
         width: 100%;
+    }
+
+    img {
+        padding: 2rem;
     }
 
     p {
