@@ -18,9 +18,10 @@
     }
 }
 
-@media screen and (min-width: 800px) {
-    .redes-img {
 
+    .redes-img {
+        
+        @media screen and (min-width: 800px) {       
         width: 2.5rem;
         opacity: 0.5;
 

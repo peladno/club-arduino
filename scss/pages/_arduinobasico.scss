@@ -6,19 +6,13 @@
     gap: 2rem;
     margin: 1.5rem;
 
-    @media screen and (min-width: 1050px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     iframe{
         width: 100%;
     }
 }
 
 .arduino-basico-continuacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-box (column, center);
 }
 
 .arduinobasico-main  {
@@ -35,12 +29,4 @@
     img {
         width: 150px;
     }
-}
-@media screen and (min-width: 800px) {
-    #boton-youtube:hover {
-        animation-name: moving;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: .4s;
-      }
 }

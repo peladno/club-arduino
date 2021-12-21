@@ -1,0 +1,298 @@
+
+//header
+
+.header-logoimg {
+    @media screen and (min-width:600px) {
+        width: 150px;
+        margin-left: 30px;      
+    }
+} 
+
+//footer
+
+.footer-arduino {
+    section {
+
+    @media screen and (min-width:600px) {
+        justify-items:flex-start;
+        padding-left: 30px; 
+    }
+}
+
+    p {
+
+    @media screen and (min-width:600px) {
+
+        text-align: left;
+    }
+} 
+}
+
+
+.footer-redes img {
+
+    @media screen and (min-width: 800px) {
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+//banner
+
+.titulo {
+    h1 {
+        @media screen and (min-width: 800px) {
+            text-align: left;
+        }
+    }
+}
+
+//index
+.arduino-index0 {
+    @media screen and (min-width:600px) {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: $font-size-h1;
+        color: $color-font; 
+        text-align: center;
+        padding: 0.93rem;
+    } 
+    
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+        padding: 1rem;
+      }
+
+    article {
+        @include flex-box (column, center);
+    }
+}
+
+#logo-arduino-negro {
+
+    @media screen and (min-width: 800px) {
+        &:hover {
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+
+        @keyframes moving {
+  
+            0% {
+              transform: rotate(0deg);
+            }
+          
+            25% {
+              transform: rotate(10deg);
+            }
+            
+            50% {
+              transform: rotate(-0deg);
+            }
+            
+            75% {
+              transform: rotate(-10deg);
+            }
+          
+            100% {
+              transform: rotate(0deg);
+            }
+          
+          }
+        }
+    }
+}
+
+//quienes somos
+
+.quienessomos-section1 {
+
+    @media screen and (min-width:600px) {
+        display: grid;
+        grid-template-areas: 
+         "a a a"
+         "b c d"
+         "e e e"
+         "f g h";
+        grid-template-columns: repeat(3, 1fr);
+        }
+
+    article {
+        @media screen and (min-width:600px) {
+        padding: .5rem;
+        }
+
+        &:nth-child(1){
+            @media screen and (min-width:600px){
+                grid-area: a;
+            }  
+        }
+
+        &:nth-child(2){
+            @media screen and (min-width:600px){
+                grid-area: b;
+            }  
+        }
+        &:nth-child(3){
+            @media screen and (min-width:600px){
+                grid-area: c;
+            }  
+        }
+
+        &:nth-child(4){
+            @media screen and (min-width:600px){
+                grid-area: d;
+            }  
+        }
+
+        &:nth-child(5){
+            @media screen and (min-width:600px){
+                grid-area: e;
+            }  
+        }
+
+        &:nth-child(6){
+            @media screen and (min-width:600px){
+                grid-area: f;
+            }  
+        }
+
+        &:nth-child(7){
+            @media screen and (min-width:600px){
+                grid-area: g;
+            }  
+        }
+
+        &:nth-child(8){
+            @media screen and (min-width:600px){
+                grid-area: h;
+            }  
+        }
+    }
+}
+
+//talleres
+
+.talleres-main {
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        height: 100%;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+        color: $color-font;
+        text-align: center;
+    }
+
+    p {
+        font-size: $font-size-p2;
+        padding:0 0 1.5rem ;
+    }
+
+
+    section {
+        animation: entrada 700ms ease;
+        animation-fill-mode: backwards;
+        transition: transform .2s; 
+
+        &:hover {
+            transform:scale(1.08);
+        }
+
+        &:nth-child(1) {
+            animation-delay: number(1);
+        }
+        
+        &:nth-child(2) {
+            animation-delay: number(2);
+        }
+
+        &:nth-child(3) {
+            animation-delay: number(3);
+        }
+
+        &:nth-child(4) {
+            animation-delay: number(4);
+        }
+        
+    }
+   
+}
+
+//arduino basico
+
+.arduinobasico-videos {
+
+    @media screen and (min-width: 1050px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    #boton-youtube:hover {
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: .4s;
+      }
+}
+
+//descargas
+
+.descargas-main {
+
+    @media screen and (min-width: 600px) {
+
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+        color: $color-font;
+        text-align: center;
+    }
+
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+    }
+
+    ul {
+        margin-left: 6.25rem;
+        margin-bottom: 0.93rem;
+
+        li {
+            padding: 1rem;
+            font-size: $font-size-p2;
+            list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
+
+            @media screen and (min-width: 600px) {
+                padding: 1.87rem;
+            }
+        }
+    }
+}
+

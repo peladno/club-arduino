@@ -4,35 +4,4 @@
     margin-left: 1rem;
     margin-right: 1rem;
 
-    @media screen and (min-width: 600px) {
-
-        margin-left: 3.125rem;
-        margin-right: 3.125rem;
-    }
-
-    h2 {
-        font-size: $font-size-h2;
-        color: $color-font;
-        text-align: center;
-    }
-
-    p {
-        font-size: $font-size-p;
-        text-align: center;
-    }
-
-    ul {
-        margin-left: 6.25rem;
-        margin-bottom: 0.93rem;
-
-        li {
-            padding: 1rem;
-            font-size: $font-size-p2;
-            list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
-
-            @media screen and (min-width: 600px) {
-                padding: 1.87rem;
-            }
-        }
-    }
 }

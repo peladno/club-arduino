@@ -1,6 +1,7 @@
 @import "globales";
-@import "fuctions";
 @import "variables";
+@import "fuctions";
+@import "mixins";
 @import "../components/card";
 @import "../components/button";
 @import "scss/sections/header";
@@ -13,3 +14,4 @@
 @import "scss/pages/arduinobasico";
 @import "scss/pages/contacto";
 @import "scss/pages/descargas";
+@import "media.queries";
