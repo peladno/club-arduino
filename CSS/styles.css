@@ -27,10 +27,6 @@
 
 /*Navegador*/
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #42b3ff);
   background-size: cover;
   margin-bottom: 15px;

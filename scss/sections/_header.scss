@@ -2,8 +2,6 @@
 /*Navegador*/
 
 header {
-    @include flex-box (row, flex-end);
-    justify-content: space-between;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(66, 179, 255));
     background-size: cover;
     margin-bottom: 15px;

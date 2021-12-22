@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss CSS/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-bootstrap": "node-sass --include-path scss scss/bootstrap/scss/bootstrap.scss CSS/bootstrap.css",
+    "watch-bootstrap": "nodemon -e scss -x \"npm run build-bootstrap\""
   },
   "repository": {
     "type": "git",
