@@ -1,13 +1,13 @@
-$font-size-h1: 2.7rem;
-$font-size-h2: 2.2em;
-$font-size-p: 1.6rem;
-$font-size-p2:1.2rem;
-$color-font: #F28E23;
-$color-font2: white;
+$font-size-h1: map-get($heading, h1);
+$font-size-h2: map-get($heading, h2);
+$font-size-p: map-get($heading, p);
+$font-size-p2:map-get($heading, p2);
+$color-font: map-get($colors, font1);
+$color-font2:  map-get($colors, font2);
 $min-w: 600px;
-$color-bg-button: rgba(18, 90, 246, 0.657);
-$color-bg-button-hover: rgba(18, 90, 246, 0.897);
-$color-font-button: white;
+$color-bg-button:  map-get($colors, button);
+$color-bg-button-hover:  map-get($colors, button-h);
+$color-font-button:  map-get($colors, font2);
 $delay: 100ms;
 
 
