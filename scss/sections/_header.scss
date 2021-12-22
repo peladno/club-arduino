@@ -31,3 +31,7 @@ header {
 nav button {
     margin: 5px;
 }
+
+#navbarNavDropdown, .dropdown-menu, .navbar-toggler {
+    background-color: $color-font;
+}

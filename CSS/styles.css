@@ -50,6 +50,9 @@ header {
 nav button {
   margin: 5px; }
 
+#navbarNavDropdown, .dropdown-menu, .navbar-toggler {
+  background-color: #F28E23; }
+
 /*redes flotantes*/
 .redes-flotantes {
   display: none; }

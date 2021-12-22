@@ -48,10 +48,8 @@
 // scss-docs-start reboot-body-rules
 body {
   margin: 0; // 1
-  font-family: var(--#{$variable-prefix}body-font-family);
   @include font-size(var(--#{$variable-prefix}body-font-size));
   font-weight: var(--#{$variable-prefix}body-font-weight);
-  line-height: var(--#{$variable-prefix}body-line-height);
   color: var(--#{$variable-prefix}body-color);
   text-align: var(--#{$variable-prefix}body-text-align);
   background-color: var(--#{$variable-prefix}body-bg); // 2
@@ -88,8 +86,6 @@ hr:not([size]) {
 %heading {
   margin-top: 0; // 1
   margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-style: $headings-font-style;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
