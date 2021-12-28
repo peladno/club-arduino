@@ -139,7 +139,7 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem; }
+  padding-left: 0rem; }
 
 ol,
 ul,
@@ -240,7 +240,7 @@ figure {
 
 img,
 svg {
-  vertical-align: middle; }
+  vertical-align: none; }
 
 table {
   caption-side: bottom;

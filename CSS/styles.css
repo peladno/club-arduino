@@ -75,24 +75,34 @@ nav button {
       opacity: 1; } }
 
 /*footer*/
-.footer-arduino {
-  justify-items: center; }
-  .footer-arduino section {
-    background-color: #F28E23;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center; }
-  .footer-arduino article {
-    padding-left: 0px; }
-  .footer-arduino p {
-    text-align: center;
-    color: white;
-    font-size: 1.1rem; }
+.footer-arduino section {
+  background-color: #F28E23;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px; }
+
+.footer-arduino article {
+  padding-left: 0px; }
+
+.footer-arduino p {
+  color: white;
+  font-size: 1.2rem;
+  min-width: 250px; }
+
+.footer-arduino li {
+  list-style: none;
+  color: white;
+  font-size: 1.1rem; }
+
+.footer-arduino h5 {
+  color: white;
+  font-size: 1.2rem; }
 
 .footer-logo {
-  width: 100px;
-  margin-top: 15px; }
+  width: 100px; }
 
 .footer-redes img {
   width: 40px;
@@ -291,14 +301,40 @@ nav button {
     width: 150px;
     margin-left: 30px; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .footer-arduino section {
-    justify-items: flex-start;
-    padding-left: 30px; } }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .footer-arduino p {
     text-align: left; } }
+
+@media screen and (min-width: 700px) {
+  .footer-arduino .footer-description {
+    grid-column: 1/2;
+    grid-row: 1/2; } }
+
+@media screen and (min-width: 700px) {
+  .footer-arduino .footer-contacto {
+    grid-column: 2/3;
+    grid-row: 1/2; } }
+
+@media screen and (min-width: 700px) {
+  .footer-arduino .footer-links {
+    grid-column: 3/4;
+    grid-row: 1/2; } }
+
+@media screen and (min-width: 700px) {
+  .footer-arduino .footer-dev {
+    grid-column: 1/3;
+    grid-row: 2/3; } }
+
+@media screen and (min-width: 700px) {
+  .footer-arduino .footer-redes {
+    grid-column: 3/4;
+    grid-row: 2/3; } }
 
 @media screen and (min-width: 800px) {
   .footer-redes img {

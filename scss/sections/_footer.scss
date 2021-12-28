@@ -1,14 +1,13 @@
 /*footer*/
 
 .footer-arduino {
-    justify-items: center;
     
     section{
         background-color: $color-font;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
+        @include flex-box (column,flex-start);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
     }
 
     article {
@@ -16,15 +15,24 @@
     }
 
     p {
-        text-align: center;
+        color: $color-font2;
+        font-size: $font-size-p2;
+        min-width: 250px;
+    } 
+
+    li {
+        list-style: none;
         color: $color-font2;
         font-size: 1.1rem;
-    } 
+    }
+    h5 {
+        color: $color-font2;
+        font-size: $font-size-p2;
+    }
 }
 
 .footer-logo {
     width: 100px;
-    margin-top: 15px;
 }
 
 .footer-redes img {
