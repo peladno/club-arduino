@@ -77,18 +77,25 @@
             Correo:<br>
             <b>contacto@clubarduino.cl</b></p>
         </section>
-        <section class="contacto-form">
-                <form>
-                    <!--formulario de contacto-->
-                    <input type="text" class="contacto-secciones" id="fname" name="fname" placeholder="Nombre"><br>  
-                    <input type="text" class="contacto-secciones" id="lname" name="lname" placeholder="Apellido"><br>
-                    <input type="email" class= "contacto-secciones" name="mail" id="mail" placeholder="Mail"><br>
-                    <input type="text" class="contacto-secciones" id="issue" name="issue" placeholder="Asunto"><br>
-                    <textarea class="contacto-comentario" name="comment"  placeholder="Escribe tus dudas"></textarea><br>
-                    <input class="contacto-boton" type="submit" value="Enviar">
-                    <input class="contacto-boton" type="reset">
-                </form>
-        </section>   
+        <article class="form-article">
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="nombre" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+              <input type="apellido" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </article>  
         <section class="contacto-mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0117883700755!2d-70.67126028515297!3d-33.4489994048232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50000f8cfab%3A0x86065e4f280d7252!2sClub%20Arduino%20Chile!5e0!3m2!1sen!2scl!4v1638157532230!5m2!1sen!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
