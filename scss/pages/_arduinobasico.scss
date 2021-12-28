@@ -12,7 +12,7 @@
 }
 
 .arduino-basico-continuacion {
-    @include flex-box (column, center);
+    @include flex-box (column, center, center);
 }
 
 .arduinobasico-main  {

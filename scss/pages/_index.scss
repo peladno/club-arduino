@@ -7,15 +7,6 @@
   }
 }
 
-.arduino-index0 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 1.25rem;
-    margin: 2.5rem;
-
-}
-
 .placa-div img {
     width: 100%;
 }
@@ -23,4 +14,24 @@
 #logo-arduino-negro {
     width: 150px;
 
+}
+
+.arduino-index0 {
+    margin: 2.5rem;
+    h1 {
+        font-size: $font-size-h1;
+        color: $color-font; 
+        text-align: center;
+        padding: 0.93rem;
+    } 
+        
+    p {
+        font-size: $font-size-p;
+        text-align: center;
+        padding: 1rem;
+    }
+    a {
+        @include flex-box (row, center, center)
+        
+    }
 }
