@@ -67,7 +67,7 @@ nav button {
       top: 0;
       right: 0;
       margin-top: 7rem;
-      margin-right: 20px; } }
+      margin-right: 15px; } }
 
 @media screen and (min-width: 800px) {
   .redes-img {
@@ -93,7 +93,7 @@ nav button {
 .footer-arduino p {
   color: white;
   font-size: 1.2rem;
-  min-width: 250px; }
+  max-width: 350px; }
 
 .footer-arduino li {
   list-style: none;
@@ -338,7 +338,7 @@ nav button {
     grid-template-rows: 1fr .5fr; }
     .footer-arduino section p {
       text-align: left; }
-    .footer-arduino section .footer-description {
+    .footer-arduino section .footer-logodescripcion {
       grid-column: 1/3;
       grid-row: 1/2; }
     .footer-arduino section .footer-contacto {
