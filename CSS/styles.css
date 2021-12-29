@@ -170,7 +170,7 @@ nav button {
   text-align: center; }
 
 .quienessomos-main img, .quienessomos-main article {
-  width: 100%; }
+  max-width: 100%; }
 
 .quienessomos-main img {
   padding: 2rem; }
@@ -403,7 +403,7 @@ nav button {
     100% {
       transform: rotate(0deg); } } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .quienessomos-section1 {
     display: grid;
     grid-template-areas: "a a a" "b c d" "e e e" "f g h";
