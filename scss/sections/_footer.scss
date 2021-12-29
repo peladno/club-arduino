@@ -3,7 +3,7 @@
 .footer-arduino {
     
     section{
-        background-color: $color-font;
+        background-color: #4B3f72;
         @include flex-box (column,flex-start,flex-start);
         padding-left: 30px;
         padding-right: 30px;
@@ -12,6 +12,7 @@
 
     article {
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     p {
@@ -38,7 +39,7 @@
 }
 
 .footer-redes img {
-    width: 30px;
+    width: 34px;
     opacity: 1;
 }
 
@@ -47,7 +48,7 @@
         text-decoration: none;
         color: $color-font2;
         &:hover{
-            color: black;
+            color: #1f2041;
         }
     }
 }

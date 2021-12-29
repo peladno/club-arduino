@@ -3,11 +3,7 @@
 .redes-flotantes {
     display: none;
 
-    @media screen and (min-width:600px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
 
         display: grid;
         position: fixed;
@@ -15,19 +11,18 @@
         right: 0;
         margin-top: 7rem;
         margin-right: 15px;
-        
-    }
-}
 
-
-    .redes-img {
-        
-        @media screen and (min-width: 800px) {       
-        width: 2.5rem;
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 1;
+        .redes-img {
+            
+            width: 2.5rem;
+            opacity: 0.5;
+    
+            &:hover {
+                opacity: 1;
+            }
         }
+        
     }
 }
+
+

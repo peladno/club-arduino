@@ -9,6 +9,7 @@ $color-bg-button:  map-get($colors, button);
 $color-bg-button-hover:  map-get($colors, button-h);
 $color-font-button:  map-get($colors, font2);
 $delay: 100ms;
+$border-top: 1px solid $color-font2;
 
 
 
