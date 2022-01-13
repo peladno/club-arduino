@@ -146,7 +146,7 @@ nav button {
     padding: 0.93rem; }
   .arduino-index0 p {
     font-size: 1.6rem;
-    text-align: center;
+    text-align: justify;
     padding: 1rem; }
   .arduino-index0 a {
     display: flex;
@@ -378,7 +378,6 @@ nav button {
       padding: 0.93rem; }
     .arduino-index0 p {
       font-size: 1.6rem;
-      text-align: center;
       padding: 1rem; }
     .arduino-index0 article {
       display: flex;
