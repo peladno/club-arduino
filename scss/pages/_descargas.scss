@@ -25,9 +25,10 @@
             font-size: $font-size-p2;
             list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
 
-            @media screen and (min-width: 600px) {
-                padding: 1.87rem;
+            a {
+                font-size: 1.5rem;
             }
+
         }
     }
 }

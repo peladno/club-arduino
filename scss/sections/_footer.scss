@@ -11,8 +11,8 @@
     }
 
     article {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
+        
     }
 
     p {
@@ -21,6 +21,7 @@
         max-width: 350px;
     } 
 
+    //links y contacto
     li {
         list-style: none;
         color: $color-font2;
@@ -28,9 +29,12 @@
         padding-top: 0.5rem;
         
     }
+
+    //titulos de footer
     h5 {
         color: $color-font2;
         font-size: $font-size-p2;
+        margin-bottom: 0;   
     }
 }
 
