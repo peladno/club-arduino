@@ -330,7 +330,7 @@ nav button {
   .footer-arduino section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .5fr; }
+    grid-template-rows: 1fr .3fr; }
     .footer-arduino section p {
       text-align: left; }
     .footer-arduino section h5 {
@@ -371,14 +371,6 @@ nav button {
   .arduino-index0 {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .arduino-index0 h1 {
-      font-size: 2.7rem;
-      color: #F28E23;
-      text-align: center;
-      padding: 0.93rem; }
-    .arduino-index0 p {
-      font-size: 1.6rem;
-      padding: 1rem; }
     .arduino-index0 article {
       display: flex;
       flex-direction: column;
