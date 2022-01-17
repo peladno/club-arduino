@@ -114,17 +114,30 @@ nav button {
   .footer-contacto a:hover, .footer-links a:hover, .footer-dev a:hover {
     color: #1f2041; }
 
-/*titulo con imagen*/
-.titulo {
+.titulo-quienes, .titulo-arduino, .titulo-talleres, .titulo-descargas, .titulo-contacto {
   color: white;
   padding: 6.25rem;
-  background-image: url(../imagenes/talleres/imgTitulo2.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 0.93rem; }
-  .titulo h1 {
+  .titulo-quienes h1, .titulo-arduino h1, .titulo-talleres h1, .titulo-descargas h1, .titulo-contacto h1 {
     font-size: 3.1rem;
-    text-align: center; }
+    text-align: left; }
+
+.titulo-arduino {
+  background-image: url(../imagenes/talleres/banner2.jpg); }
+
+.titulo-quienes {
+  background-image: url(../imagenes/talleres/banner1.jpg); }
+
+.titulo-talleres {
+  background-image: url(../imagenes/talleres/banner3.jpg); }
+
+.titulo-descargas {
+  background-image: url(../imagenes/talleres/banner4.jpg); }
+
+.titulo-contacto {
+  background-image: url(../imagenes/talleres/banner5.jpg); }
 
 /*index*/
 .principal1 img {
