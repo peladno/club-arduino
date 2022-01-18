@@ -23,10 +23,17 @@
         li {
             padding: 1rem;
             font-size: $font-size-p2;
-            list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png);
+            list-style: none;
 
             a {
                 font-size: 1.5rem;
+            }
+
+            ::before {
+                content: url(../../imagenes/Iconos-isometricos/64/arduino_uno_2_64.png);
+                position: relative;
+                left: -1em;
+                top: 1em;
             }
 
         }

@@ -330,9 +330,14 @@ nav button {
     .descargas-main ul li {
       padding: 1rem;
       font-size: 1.2rem;
-      list-style-image: url(../imagenes/Iconos-isometricos/32/arduino_uno_1_32.png); }
+      list-style: none; }
       .descargas-main ul li a {
         font-size: 1.5rem; }
+      .descargas-main ul li ::before {
+        content: url(../../imagenes/Iconos-isometricos/64/arduino_uno_2_64.png);
+        position: relative;
+        left: -1em;
+        top: 1em; }
 
 @media screen and (min-width: 600px) {
   .header-logoimg {
