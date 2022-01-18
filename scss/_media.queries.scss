@@ -55,6 +55,7 @@
 
                     img {
                         opacity: 0.5;
+                        width: 34px;
 
                     &:hover{
                         opacity: 1;
@@ -66,7 +67,7 @@
     }
 }
 
-//banner
+//banner de cada página
 .titulo {
     h1 {
         @media screen and (min-width: 800px) {
@@ -122,7 +123,7 @@
     }
 }
 
-//quienes somos grid
+//quienes somos grid, con imagenes y texto
 .quienessomos-section1 {
     @media screen and (min-width:800px) {
         display: grid;
@@ -252,12 +253,52 @@
         margin-left: 3.125rem;
         margin-right: 3.125rem; 
         ul {
-            li {
+            li {  
+             padding: 1.87rem;
                 
-                @media screen and (min-width: 600px) {
-                    padding: 1.87rem;
-                }
             }
         }
+    }
+}
+
+//contacto grid
+
+.contacto-main {  
+    @media screen and (min-width: 800px) {
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1.25rem;
+        grid-column-gap: 1.25rem;
+    }
+}
+
+.form-article {
+    @media screen and (min-width: 800px) {
+        grid-row: 1 / 3;
+        padding:20px;
+    }
+}
+    
+.contacto-datos {
+    @media screen and (min-width: 800px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    } 
+}
+
+.contacto-mapa {
+    @media screen and (min-width: 800px) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+
+//area comentario contacto
+.contacto-comentario {
+    @media screen and (min-width: 800px) {
+        height: 300px;
     }
 }
