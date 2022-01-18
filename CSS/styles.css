@@ -308,7 +308,7 @@ nav button {
       .descargas-main ul li a {
         font-size: 1.5rem; }
       .descargas-main ul li ::before {
-        content: url(../../imagenes/Iconos-isometricos/64/arduino_uno_2_64.png);
+        content: url(../imagenes/Iconos-isometricos/64/arduino_uno_2_64.png);
         position: relative;
         left: -2em;
         top: 1em; }
