@@ -1,5 +1,5 @@
-/*index*/
 
+//imagen grande principal de index
 .principal1 {
     img {
         width: 100%;
@@ -7,15 +7,18 @@
   }
 }
 
+//imagen de placa que va a lado de texto
 .placa-div img {
     width: 100%;
 }
 
+//logo con borde negro, tiene animacion en desktop
 #logo-arduino-negro {
     width: 150px;
 
 }
 
+//texto principal 
 .arduino-index0 {
     margin: 2.5rem;
     h1 {
