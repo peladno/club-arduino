@@ -1,3 +1,3 @@
 # club-arduino
-Proyecto para Club Arduino
+Project for Club Arduino
 @javierpastry
